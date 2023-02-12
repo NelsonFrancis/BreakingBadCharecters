@@ -12,6 +12,7 @@ function App() {
     axios.get(`https://www.breakingbadapi.com/api/characters?name=${query}`)
     .then(response => {
         setData(response.data)
+        console.log(response.data)
       }
       )
     .catch(err => console.log(err))
